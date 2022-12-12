@@ -1,7 +1,5 @@
-echo "# pixelstreaming" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/heungh/pixelstreaming.git
-git push -u origin main
+1.EC2설치
+
+2.NVDIA 그래픽 드라이버 설치
+
+3.UnrealEditor설치
