@@ -2,9 +2,9 @@
 
 # **Why this project is created**
 
-This project began with the idea of applying LLM to manage a large number of Aurora MySQL databases, aiming to streamline database management.<br>
-We introduced the concept of an Agent to the LLM, creating a simple demonstration that analyzes error logs, searches Cloudwatch metric information using natural language, and generates graphs.<br>
-We hope this project will be of great help to customers who are considering implementing LLM to improve their database management efficiency.<br>
+This project began with the idea of applying LLM to manage a large number of Aurora MySQL databases, aiming to streamline database management.
+I introduced the concept of an Agent to the LLM, creating a simple demonstration that analyzes error logs, searches Cloudwatch metric information using natural language, and generates graphs.
+I hope this project will be of great help to customers who are considering implementing LLM to improve their database management efficiency.<br>
 
 ## **How to deploy and test the solution**
 
