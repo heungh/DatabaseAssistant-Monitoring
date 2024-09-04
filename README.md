@@ -2,14 +2,9 @@
 
 # **Why this project is created**
 
-This project emerged from our efforts to address challenges faced by a game company under our management. <br>
-As a game development company, they launched and operated their game service using Aurora MySQL but encountered significant difficulties in managing multiple clusters. <br>
-In particular, their weekly game content updates involved complex tasks such as updating data in Aurora MySQL tables and schema changes across multiple clusters. <br>
-Mistakes during these operations often negatively impacted the game service.<br>
-Our team devised a demo solution using GenAI Claude 3, leveraging its function calling capabilities. <br>
-This solution allows users to search and modify data using natural language and perform operations simultaneously across multiple clusters. <br>
-It also includes functionality to analyze the performance of multiple clusters at once.<br>
-This demo shows a few monitoring operations of cloudwatch metrics, performance insight top queries, and analyzing texts from error logs,slow logs <br>
+This project began with the idea of applying LLM to manage a large number of Aurora MySQL databases, aiming to streamline database management.<br>
+We introduced the concept of an Agent to the LLM, creating a simple demonstration that analyzes error logs, searches Cloudwatch metric information using natural language, and generates graphs.<br>
+We hope this project will be of great help to customers who are considering implementing LLM to improve their database management efficiency.<br>
 
 ## **How to deploy and test the solution**
 
