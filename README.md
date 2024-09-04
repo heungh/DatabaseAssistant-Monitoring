@@ -59,7 +59,7 @@ ex : s3_bucket_name = "test-s3bucket-fugwilwec8mx"
 ### (optional) 4-1. Enable Performance insights and Enhanced monitoring on all Aurora mysql clusters.
 
 - If Aurora mysql is not enabled with PI , <br>
-- you have to modify PI on all instances of Aurora clusters. <br>
+  you have to modify PI on all instances of Aurora clusters. <br>
 
     
 ### 5. Running the application:
