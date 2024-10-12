@@ -37,7 +37,7 @@ LLM에 Agent 개념을 도입하여, 오류 로그를 분석하고 자연어로 
      - load_data.py
      - data.json
 ```
-        
+- cd da-mon 실행하여 da-mon 폴더로 들어갑니다. <br>        
 - setup.sh에 chmod를 실행하고 setup.sh를 실행합니다 <br>
 ```
     chmod +x /home/ec2-user/da-mon/setup.sh
@@ -62,7 +62,7 @@ ex : s3_bucket_name = "test-s3bucket-fugwilwec8mx"
     
 ### 5. 애플리케이션 실행:
 
-- EC2 인스턴스 내에서 "streamlit run da-mon.py"를 실행하여 애플리케이션을 시작합니다. <br>
+- ec2 인스턴스내의 da-mon 폴더밑에서 "streamlit run da-mon.py"를 실행하여 애플리케이션을 시작합니다. <br>
 
 -    그런 다음 채팅 창에서 다음 질문들을 진행해스 테스트 해보세요 :<br>
    ```
