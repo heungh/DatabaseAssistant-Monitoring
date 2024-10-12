@@ -21,7 +21,8 @@ LLM에 Agent 개념을 도입하여, 오류 로그를 분석하고 자연어로 
     pip install mysql.connector
     pip install boto3       
     pip install langchain-aws
-    pip install gdown 
+    pip install gdown
+    pip install matplotlib
     export AWS_DEFAULT_REGION=us-east-1
 ```
 
