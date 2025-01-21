@@ -90,4 +90,5 @@ ex : s3_bucket_name = "test-s3bucket-fugwilwec8mx"
    ```
 
 ### 6. Demo:
+- 위와 같이 테스트할때 구현되는 데모를 여기서 확인해보세요.
 [Demolink](https://www.youtube.com/playlist?list=PLtrKveME8VY41_VFxKJrjPGmRkcDInlix)
