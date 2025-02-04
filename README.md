@@ -97,13 +97,23 @@ ex : s3_bucket_name = "test-s3bucket-fugwilwec8mx"
 - /home/ec2-user 디렉토리로 가서 아래 명령을 실행해주세요. 
 - gdown https://drive.google.com/drive/folders/1Y1bfYo7mOhPDv117wey7A55V_jfK7su_?usp=sharing --folder
 - cd ec2-admin 으로 들어가서  ls -al 하여  EC2-admin.py를 확인하시면 됩니다. 혹시 권한 이슈가 있다면 실행되고 있는 ec2에 ec2권한을 추가하십시요.
-- 소스코드안에 s3 bucket 을 db-admin에서 사용하신 s3 bucket이름으로 바꿔주세요.   
+- 소스코드안에 s3 bucket 을 db-admin에서 사용하신 s3 bucket이름으로 바꿔주세요.
+- ec2 터미널에서 streamlit run ec2-admin.py를 실행하면 데모가 실행됩니다. 
 
 ### 8. Log-admin:
 - /home/ec2-user 디렉토리로 가서 아래 명령을 실행해주세요. 
 - gdown https://drive.google.com/drive/folders/1g2XtvsqNPaQmmSeb2RU1X77ztahSbZM8?usp=sharing --folder
 - cd log-admin 하여 해당 디렉토리로 들어간 다음, ls -al 해서 log-admin.py와 log_data.csv가 있는지 확인하세요.
 - 소스코드안에 s3 bucket 을 db-admin에서 사용하신 s3 bucket이름으로 바꿔주세요.   
-- db-admin 구성할때 사용한 s3 bucket 밑에 log 라는 폴더를 구성하고(S3 콘솔에서 실행) log 폴더 밑에 log_data.csv를 업로드 하시면 실행하시면 됩니다. 
+- db-admin 구성할때 사용한 s3 bucket 밑에 log 라는 폴더를 구성하고(S3 콘솔에서 실행) log 폴더 밑에 log_data.csv를 업로드하세요.
+ ![image](https://github.com/user-attachments/assets/804f54ba-6439-4a79-8e90-9ca57e7699c1)
+- athena 쿼리를 수행하기 위해 글루 테이블로 먼저 생성하는 작업이 필요합니다.
+- glue 콘솔에서 logs_glue_db 데이터베이스를 생성하고, glue crawler를 이용하여 log_data.csv를 글루 테이블로 만듭니다.
+- ![image](https://github.com/user-attachments/assets/0c8ae160-a842-4cb8-962d-0b335c637968)
+- athena 콘솔에 가서, 세팅부분에 위에서 언급한 s3 bucket이 설정되어있는지 확인하고 없으면 해당 s3버킷및 아웃풋 폴더(폴더이름은 임의로 설정)를 설정해줘야합니다.
+  ![image](https://github.com/user-attachments/assets/966e1efe-7015-4945-bdf3-600c57766828)
+
+- 또한 athena 와 glue에 대한 권한도 ec2 인스턴스에 부여해야 합니다.
+- 이와 같이 세팅을 진행하면 ec2 터미널에서 log_admin 폴더 밑에서 streamlit run log-admin.py 를 실행하여 데모를 테스트해볼수 있습니다.  
 
 
