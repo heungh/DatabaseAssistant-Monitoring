@@ -89,18 +89,14 @@ ex : s3_bucket_name = "test-s3bucket-fugwilwec8mx"
    
    ```
 
-### 6. Demo:
-- 위와 같이 테스트할때 구현되는 데모를 여기서 확인해보세요.
-[Demolink](https://www.youtube.com/playlist?list=PLtrKveME8VY41_VFxKJrjPGmRkcDInlix)
-
-### 7. EC2-admin:
+### 6. EC2-admin:
 - /home/ec2-user 디렉토리로 가서 아래 명령을 실행해주세요. 
 - gdown https://drive.google.com/drive/folders/1Y1bfYo7mOhPDv117wey7A55V_jfK7su_?usp=sharing --folder
 - cd ec2-admin 으로 들어가서  ls -al 하여  EC2-admin.py를 확인하시면 됩니다. 혹시 권한 이슈가 있다면 실행되고 있는 ec2에 ec2권한을 추가하십시요.
 - 소스코드안에 s3 bucket 을 db-admin에서 사용하신 s3 bucket이름으로 바꿔주세요.
 - ec2 터미널에서 streamlit run ec2-admin.py를 실행하면 데모가 실행됩니다. 
 
-### 8. Log-admin:
+### 7. Log-admin:
 - /home/ec2-user 디렉토리로 가서 아래 명령을 실행해주세요. 
 - gdown https://drive.google.com/drive/folders/1g2XtvsqNPaQmmSeb2RU1X77ztahSbZM8?usp=sharing --folder
 - cd log-admin 하여 해당 디렉토리로 들어간 다음, ls -al 해서 log-admin.py와 log_data.csv가 있는지 확인하세요.
@@ -116,4 +112,7 @@ ex : s3_bucket_name = "test-s3bucket-fugwilwec8mx"
 - 또한 athena 와 glue에 대한 권한도 ec2 인스턴스에 부여해야 합니다.
 - 이와 같이 세팅을 진행하면 ec2 터미널에서 log_admin 폴더 밑에서 streamlit run log-admin.py 를 실행하여 데모를 테스트해볼수 있습니다.  
 
+### 8. Demo:
+- 위와 같이 테스트할때 구현되는 데모를 여기서 확인해보세요. (ec2-admin은 추후에 데모로 올리겠습니다)
+[Demolink](https://www.youtube.com/playlist?list=PLtrKveME8VY41_VFxKJrjPGmRkcDInlix)
 
